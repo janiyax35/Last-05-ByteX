@@ -1,0 +1,131 @@
+/*
+ * Custom CSS for ByteX Customer Care System
+ * Author: Jules
+ */
+
+/* --- Universal Settings & Google Font --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* --- Form Layout & Styling --- */
+.form-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.form-wrapper {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* --- Header & Logo --- */
+.form-header .logo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #0d6efd; /* Bootstrap Primary Blue */
+    margin-bottom: 0;
+}
+
+.form-header .tagline {
+    font-size: 1rem;
+    color: #6c757d; /* Muted text color */
+    margin-bottom: 1.5rem;
+}
+
+.form-header h2 {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+
+/* --- Form Controls --- */
+.form-control {
+    height: 55px; /* Taller input fields */
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-floating > label {
+    padding-top: 0.85rem;
+    color: #6c757d;
+}
+
+.form-floating > .form-control:focus ~ label {
+    color: #0d6efd;
+}
+
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-primary i {
+    margin-right: 8px;
+}
+
+/* --- Links & Alerts --- */
+a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+}
+
+.alert {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* --- Dashboard placeholder styles --- */
+.dashboard-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.dashboard-header {
+    margin-bottom: 20px;
+}
+
+.dashboard-content p {
+    font-size: 1.2rem;
+}
+
+.logout-btn {
+    margin-top: 30px;
+}
