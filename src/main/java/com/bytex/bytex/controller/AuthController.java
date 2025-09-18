@@ -89,41 +89,41 @@ public class AuthController {
     public String adminDashboard(HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user == null || !"Admin".equals(user.getRole())) return "redirect:/login";
-        return "admin_dashboard";
+        return "admin/dashboard";
     }
 
     @GetMapping("/staff/dashboard")
     public String staffDashboard(HttpSession session) {
          User user = (User) session.getAttribute("user");
         if (user == null || !"Staff".equals(user.getRole())) return "redirect:/login";
-        return "staff_dashboard";
+        return "staff/dashboard";
     }
 
     @GetMapping("/technician/dashboard")
     public String technicianDashboard(HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user == null || !"Technician".equals(user.getRole())) return "redirect:/login";
-        return "technician_dashboard";
+        return "technician/dashboard";
     }
 
     @GetMapping("/pm/dashboard")
     public String pmDashboard(HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user == null || !"ProductManager".equals(user.getRole())) return "redirect:/login";
-        return "pm_dashboard";
+        return "pm/dashboard";
     }
 
     @GetMapping("/wm/dashboard")
     public String wmDashboard(HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user == null || !"WarehouseManager".equals(user.getRole())) return "redirect:/login";
-        return "wm_dashboard";
+        return "wm/dashboard";
     }
 
     @GetMapping("/customer/dashboard")
     public String customerDashboard(HttpSession session) {
         User user = (User) session.getAttribute("user");
         if (user == null || !"Customer".equals(user.getRole())) return "redirect:/login";
-        return "customer_dashboard";
+        return "customer/dashboard";
     }
 }
